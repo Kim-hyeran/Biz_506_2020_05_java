@@ -10,7 +10,7 @@ public class If_06 {
 		int intKor=rnd.nextInt(100);
 		int intEng=rnd.nextInt(100);
 		int intMath=rnd.nextInt(100);
-		
+				
 		int sum=intKor+intEng+intMath;
 		int avg=sum/3;
 		

@@ -3,10 +3,12 @@ package com.biz.hello;
 public class VarString_01 {
 
 	//시작점, 진입점 Method
-	//Run(^F11) 실행 시 가장 먼저 명령을 수행하는 부분
+	//Run(^F11)을 실행했을 때 제일 먼저 작동되는(execute) 코드 부분
 	public static void main(String[] args) {
 		
 		//정수형, integer형 변수 선언
+		//정수값(숫자값)을 저장하기 위한 공간 선언
+		//정수값 : 정수리터럴
 		int num1=10;
 		
 		//문자형, character형 변수 선언
