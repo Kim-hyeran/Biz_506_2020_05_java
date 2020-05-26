@@ -1,0 +1,40 @@
+package com.biz.grade;
+
+import java.util.Random;
+
+public class Grade_10 {
+	public static void main(String[] args) {
+		
+		Random random=new Random();
+		
+		int[] intKorScore=new int[10];
+		int[] intEngScore=new int[10];
+		int[] intMathScore=new int[10];
+		
+		int intKorSum=0;
+		int intEngSum=0;
+		int intMathSum=0;
+		
+		for(int i=0;i<10;i++) {
+			intKorScore[i]=random.nextInt(50)+51;
+			intEngScore[i]=random.nextInt(50)+51;
+			intMathScore[i]=random.nextInt(50)+51;
+			
+			intKorSum+=intKorScore[i];			
+			intEngSum+=intEngScore[i];			
+			intMathSum+=intMathScore[i];
+		}
+		
+		System.out.println("학생 성적 리스트");
+		System.out.println("======================================");
+		System.out.println("학번\t국어\t영어\t수학\t총점");
+		System.out.println("--------------------------------------");
+		for(int i=0;i<10;i++) {
+			System.out.printf("%d\t%d\t%d\t%d\t%d\n",i+1,intKorScore[i],intEngScore[i],intMathScore[i],intKorScore[i]+intEngScore[i]+intMathScore[i]);
+		}
+		System.out.println("======================================");
+		System.out.printf("\t%d\t%d\t%d\t%d\n",intKorSum,intEngSum,intMathSum,intKorSum+intEngSum+intMathSum);
+
+	}
+
+}
