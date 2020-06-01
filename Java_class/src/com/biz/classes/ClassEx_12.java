@@ -15,7 +15,7 @@ public class ClassEx_12 {
 		bankList[4]=new BankVO();
 		
 		for(int i=0;i<bankList.length;i++) {
-			bankList[i].setStrDate("001");
+			bankList[i].setStrNum("001");
 		}
 		
 		bankList[0].setStrDate("2020-05-01");
