@@ -23,8 +23,8 @@ public class ScoreEx_03 {
 		List<String> str1=new ArrayList<String>(); //size(배열의 length와 비슷한 개념)=0(기본값)
 													//즉, String형 데이터들을 포함할, size가 0인 리스트
 		//add() method를 호출해서 데이터를 매개변수로 전달하면, 그 때마다 size가 1씩 증가하는 리스트로 변경된다.
-		//코드가 진행되는 동안에도 add() method를 몇 번이고 호출해서 리스트의 size를 조정할 수 있다. 
-		str1.add("대한민국"); //size=1
+		//코드가 진행되는 동안에도 add() method를 몇 번이고 호출해서 리스트의 size를 조정할 수 있다.
+		str1.add("대한민국"); //size=1, 데이터 1개 추가
 		str1.add("우리나라"); //size=2
 		str1.add("Republic Of Korea"); //size=3
 		str1.add(90+"");
