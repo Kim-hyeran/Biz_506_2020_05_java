@@ -35,6 +35,12 @@ public class ScoreEx_02 {
 		
 		sService.scoreList(scoreList);
 		
+		//ScoreServiceV2에 생성한 method 출력
+		ScoreServiceV2 sService2=new ScoreServiceV2();
+		
+		sService2.stSum(scoreList);
+		sService2.stAvg(scoreList);
+		sService2.scoreList();
 		
 	}
 
