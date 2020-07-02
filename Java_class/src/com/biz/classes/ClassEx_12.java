@@ -10,10 +10,7 @@ public class ClassEx_12 {
 		BankVO[] bankList=new BankVO[5];
 		
 		for(int i=0;i<bankList.length;i++) {
-<<<<<<< HEAD
 			bankList[i]=new BankVO();
-=======
->>>>>>> f232900e54b2537918aba55fb3a10fecedfb4809
 			bankList[i].setStrNum("001");
 		}
 		
