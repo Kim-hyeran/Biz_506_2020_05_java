@@ -95,6 +95,7 @@ public class BankServiceImplV3 extends BankServiceImplV2 {
 				balance-=accVO.getOutput();
 				
 				//거래일자, 입금, 출금, 잔액
+							//공백 생성 시 NumberFormatException 발생
 				outPut.printf("%s,%d,%d,%d\n", accVO.getDate(), accVO.getInput(), accVO.getOutput(), balance);
 			}
 			outPut.close();
