@@ -19,16 +19,11 @@ public class BankServiceImplV4 extends BankServiceImplV3 {
 		accNum=scan.nextLine();
 		try {
 			//BALANCE-%05D : 정수 한 개를 입력해도 BALANCE-00001과 같이 다섯자리 정수로 자동 생성
-			accNum=String.format("BALANCE-%05d.txt", Integer.valueOf(accNum));
+			accNum=String.format("BALANCE-%05d.txt",Integer.valueOf(accNum));
 		} catch (Exception e) {
 			System.out.println("계좌번호는 정수 5자리 값만 입력할 수 있습니다.");
 			return false;
 		}
-		
-		//src/com/biz/bank/exec/data 문자열과 계좌번호 파일 문자열을 연결하여
-		//src/com/biz/bank/exec/data/BALANCE-00001.txt라는 파일 객체로 생성
-		//객체가 생성한 파일 이름을 추출하여 bFileName 필드변수에 저장
-		//File file=new File(basePackage, accNum);
 		
 		this.bFileName=basePackage+File.separator+accNum;
 		

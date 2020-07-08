@@ -5,7 +5,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintStream;
-import java.util.ArrayList;
 
 import com.biz.bank.config.Position;
 import com.biz.bank.domain.AccountVO;
@@ -96,7 +95,7 @@ public class BankServiceImplV3 extends BankServiceImplV2 {
 				balance-=accVO.getOutput();
 				
 				//거래일자, 입금, 출금, 잔액
-				outPut.printf("%s, %d, %d, %d\n", accVO.getDate(), accVO.getInput(), accVO.getOutput(), balance);
+				outPut.printf("%s,%d,%d,%d\n", accVO.getDate(), accVO.getInput(), accVO.getOutput(), balance);
 			}
 			outPut.close();
 			
