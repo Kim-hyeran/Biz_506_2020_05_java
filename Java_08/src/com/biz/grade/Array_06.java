@@ -24,7 +24,7 @@ public class Array_06 {
 			intNum[i]=rnd.nextInt(100)+1;
 		}
 		
-		//배열에 저자오딘 요소들 중 다섯개씩 덧셈을 수행할 변수를 선언
+		//배열에 저장된 요소들 중 다섯개씩 덧셈을 수행할 변수를 선언
 		int intSum=0;
 		
 		for(int i=0;i<100;i++) {
